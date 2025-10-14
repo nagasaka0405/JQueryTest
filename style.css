@@ -19,4 +19,35 @@
     padding: 0;
     cursor: pointer;
 }
+.hamburger-bar {
+    display: inline-block;
+    width: 44%;
+    height: 2px;
+    background: #242424;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .5s;
+}
+.hamburger-bar:first-child {
+    top: 16px;
+}
+.hamburger-bar:nth-child(2) {
+    top: 24px;
+}
+.hamburger-bar:last-child {
+    top:32px;
+}
+.hamburger-menu--open .hamburger-bar {
+    top: 50px;
+}
+.hamburger-menu--open .hamburger-bar:first-child {
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
+.hamburger-menu--open .hamburger-bar:last-child {
+    transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+}
+.hamburger-menu--open .hamburger-bar:nth-child(2) {
+    display: none;
+}
 
