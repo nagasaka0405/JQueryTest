@@ -1,5 +1,5 @@
 .header {
-    height: 50px:
+    height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,13 +50,13 @@
 .hamburger-menu--open .hamburger-bar:nth-child(2) {
     display: none;
 }
-.navigetion {
+.navigation {
     display: none;
     background: #242424;
     position: absolute;
     top: 50px;
     width: 100%;
-    z-index; 9999;
+    z-index: 9999;
 }
 .nav-list {
     text-align: center;
@@ -78,6 +78,6 @@
     padding: 24px 0;
     transition: .5s;
 }
-.nav-link.hover {
+.nav-link:hover {
     background: #333;
 }
